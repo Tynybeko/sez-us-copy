@@ -1,0 +1,262 @@
+.post {
+  display: flex;
+  gap: 12px;
+  background-color: transparent;
+  padding: 12px;
+  border-radius: 24px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+ul {
+  list-style: inside !important;
+}
+
+ol {
+  list-style: auto !important;
+}
+
+.post__avatar-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.post__badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 4px;
+  color: #e4e3e3;
+  height: 16px;
+  border-radius: 50px;
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+.post__badge--gradient {
+  background: rgb(226, 182, 160);
+  background: linear-gradient(167deg, rgba(226, 182, 160, 1) 0%, rgba(174, 184, 224, 1) 100%);
+  color: #09090B;
+  max-width: fit-content;
+  padding: 2px 8px;
+  min-width: 35px;
+  padding-top: 3px;
+}
+
+.post__badge--grey {
+  width: 48px;
+  height: 15px;
+  font-weight: 100;
+}
+
+.post__badge--amber {
+  background-color: #B45309;
+  color: #FDE68A;
+}
+
+.post__badge--indigo {
+  background-color: #4F46E5;
+  color: #C7D2FE;
+}
+
+.post__badge--purple {
+  background-color: #6B21A8;
+  color: #E9D5FF;
+}
+
+.post__badge--rating {
+  background-color: #4ADE80;
+  color: #09090B;
+}
+
+.post__body {
+  flex: 1;
+}
+
+.post__header {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+
+.post__username {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #E4E4E7;
+}
+
+.post__date {
+  margin-left: auto;
+  color: #71767b;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.post__menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.post__menu-dropdown {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.post__content p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 12px;
+  max-width: 480px;
+  word-wrap: anywhere;
+  color: #E4E4E7;
+  text-decoration: none;
+}
+
+.post__content {
+  text-decoration: none !important;
+}
+
+.post__content ul {
+  list-style: auto !important;
+}
+
+.post__image {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  max-height: 520px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.post__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.post__actions-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.post__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.post__action-button {
+  color: #A1A1AA;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.post__content a {
+  color: #A78BFA;
+}
+
+.post__reaction-summary {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #F2F2F2;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.post__badges-wrapper {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: end;
+  max-width: 160px;
+  height: fit-content;
+}
+
+.post__action-button--like.active {
+  svg {
+    fill: #B45309;
+  }
+}
+
+.test {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  max-width: 130px !important;
+  text-wrap: nowrap;
+}
+
+.preloader::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -16px;
+  margin-top: -16px;
+
+  content: " ";
+  display: block;
+
+  height: 32px;
+  width: 32px;
+
+  box-sizing: border-box;
+  border: solid;
+  border-width: 4px;
+  border-radius: 50%;
+  border-top-color: rgba(140, 140, 140, 0.55);
+  border-bottom-color: rgba(140, 140, 140, 0.2);
+  border-right-color: rgba(140, 140, 140, 0.2);
+  border-left-color: rgba(140, 140, 140, 0.2);
+
+  animation: rotating 0.9s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.reply-line {
+  position: absolute;
+  top: 86px;
+  min-height: 12px;
+  height: calc(100% - 88px);
+  left: 31px;
+  width: 2px;
+  background: #52525B;
+  z-index: 0;
+}
+
+.post__video {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  max-height: 520px;
+}

@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "SFProText";
+  src: local('SFProText-Medium'), local('SFProText-Web'), local('SFProTextWeb'),
+  url('@/assets/fonts/SF/SFProText-Medium.ttf');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFProText";
+  src: local('SFProText-Regular'), local('SFProText-Web'), local('SFProTextWeb'),
+  url('@/assets/fonts/SF/SFProText-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFProText";
+  src: local('SFProText-Bold'), local('SFProText-Web'), local('SFProTextWeb'),
+  url('@/assets/fonts/SF/SFProText-Bold.ttf');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ClashDislay";
+  src: local('ClashDislay-Medium'), local('ClashDislay-Web'), local('ClashDislayWeb'),
+  url('@/assets/fonts/Clash/ClashDisplayMedium.otf');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
